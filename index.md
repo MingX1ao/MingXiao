@@ -1,4 +1,4 @@
-# 你为何而来？
+# 为何而来？
 
 Hi, I'm MX, cool right?
 
