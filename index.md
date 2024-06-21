@@ -24,3 +24,15 @@ So here I am.
 出于我的水平，一些~~很多~~东西也许会有大大小小的一些问题，各位兼听则明，出了问题我可不负责😉
 
 Anyway，感谢你的点击！
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>你的网站标题</title>
+</head>
+<body>
+    <h1>欢迎来到我的网站</h1>
+    <p>点击这里访问我的博客：<a href="test.html">博客</a></p>
+    <!-- 其他内容 -->
+</body>
+</html>
