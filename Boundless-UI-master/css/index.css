@@ -343,14 +343,6 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis; */
-    display: flex;
-    align-items: center;
-}
-
-.column_box .column-category .icon {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px; /* 为图标和文本之间留出空间 */
 }
 
 .column_box .column-category a {
