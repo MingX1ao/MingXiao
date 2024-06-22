@@ -469,6 +469,11 @@
         height: auto;
         margin: 8px 1%;
     }
+    .index-container {
+        width: 98%;
+        height: auto;
+        margin: 8px 1%;
+    }
 
     .ab-content {
         width: 100%;
