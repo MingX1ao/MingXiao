@@ -278,6 +278,17 @@
     max-width: 100px;
 }
 
+.index-container {
+    float: left;
+    width: 745px;
+    margin-left: 5px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(184, 197, 214, .5);
+    -moz-box-shadow: 0 0 10px rgba(184, 197, 214, .5);
+    transition: ease-in-out 0.3s;
+    border-radius: 10px;
+}
+
 .column-container {
     float: left;
     width: 362px;
