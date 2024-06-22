@@ -6,5 +6,5 @@ Anyway，感谢你的点击。
 
 话不多说，让我们开始吧！
 
-[please click here!](Boundless-UI-master/templates/index.html)
+[please click here!](mingxiaoHomepage.html)
 
