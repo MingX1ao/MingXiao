@@ -339,10 +339,10 @@
     height: 55px;
     line-height: 55px;
     font-size: 15px;
-    /* 单行文本溢出显示省略号
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis; */
+    /*    !*单行文本溢出显示省略号*!
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;*/
 }
 
 .column_box .column-category a {
