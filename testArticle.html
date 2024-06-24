@@ -20,7 +20,7 @@
     <link rel="shortcut icon" href="IMG/Blog's Logo.png">
     <style>
         .lazy-image {
-            background: url('../img/loading.gif') no-repeat center;
+            background: url('IMG/loading.gif') no-repeat center;
             background-size: 26% 35%;
             height: 100%;
             width: 100%;
@@ -79,7 +79,7 @@
                 <a href="mingxiaoHomepage.html" class="blog-title ta-c"><img style="vertical-align: top;" alt="logo"
                         src="IMG/Blog's Logo.png" /></a>
             </div>
-            <div class="nb-a-holder" id="home"><a id="active" class="nb-a ta-c" href="mingxiaoHomepage.html">首页</a></div>
+            <div class="nb-a-holder" id="home"><a class="nb-a ta-c" href="mingxiaoHomepage.html">首页</a></div>
             <div class="nb-a-holder"><a class="nb-a ta-c" href="timeLine.html">时间轴</a></div>
                                                                                                     <!--<div class="nb-a-holder"><a class="nb-a ta-c" href="tag.html">标签墙</a></div>-->
             <div class="nb-a-holder"><a class="nb-a ta-c" href="articleCategory.html">分类</a></div>
@@ -195,35 +195,35 @@
                     <h4 id="2">(2) 数据结构</h4>
                     <div class="codehilite">
                         <pre><span></span><span class="cm">/*顺序栈*/</span>
-<span class="c1">//top == -1表示栈空，top == maxSize - 1 表示栈满。</span>
-<span class="k">typedef</span> <span class="k">struct</span> <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">data</span><span class="p">[</span><span class="n">maxSize</span><span class="p">];</span> <span class="c1">// 栈中元素</span>
-    <span class="kt">int</span> <span class="n">top</span><span class="p">;</span>  <span class="c1">// 栈顶指针</span>
-<span class="p">}</span><span class="n">SqStack</span><span class="p">;</span> <span class="c1">// 类型定义</span>
-
-<span class="c1">//考试中定义顺序栈并初始化一般这样写</span>
-<span class="kt">int</span> <span class="n">stack</span><span class="p">[</span><span class="n">maxSize</span><span class="p">];</span>
-<span class="kt">int</span> <span class="n">top</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
-
-<span class="c1">//考试中写元素 x 入栈</span>
-<span class="cm">/*注意 ++top 和 top++ 的区别，两者都能实现自增的效果，但 ++top 的值为自增后的值，而 top++ 的值仍等于自增前的值。--top 和 top--类似。*/</span>
-<span class="n">stack</span><span class="p">[</span><span class="o">++</span><span class="n">top</span><span class="p">]</span> <span class="o">=</span> <span class="n">x</span><span class="p">;</span>
-
-<span class="c1">//考试中写出栈</span>
-<span class="n">x</span> <span class="o">=</span> <span class="n">stack</span><span class="p">[</span><span class="n">top</span><span class="o">--</span><span class="p">];</span>
-</pre>
+                        <span class="c1">//top == -1表示栈空，top == maxSize - 1 表示栈满。</span>
+                        <span class="k">typedef</span> <span class="k">struct</span> <span class="p">{</span>
+                            <span class="kt">int</span> <span class="n">data</span><span class="p">[</span><span class="n">maxSize</span><span class="p">];</span> <span class="c1">// 栈中元素</span>
+                            <span class="kt">int</span> <span class="n">top</span><span class="p">;</span>  <span class="c1">// 栈顶指针</span>
+                        <span class="p">}</span><span class="n">SqStack</span><span class="p">;</span> <span class="c1">// 类型定义</span>
+                        
+                        <span class="c1">//考试中定义顺序栈并初始化一般这样写</span>
+                        <span class="kt">int</span> <span class="n">stack</span><span class="p">[</span><span class="n">maxSize</span><span class="p">];</span>
+                        <span class="kt">int</span> <span class="n">top</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+                        
+                        <span class="c1">//考试中写元素 x 入栈</span>
+                        <span class="cm">/*注意 ++top 和 top++ 的区别，两者都能实现自增的效果，但 ++top 的值为自增后的值，而 top++ 的值仍等于自增前的值。--top 和 top--类似。*/</span>
+                        <span class="n">stack</span><span class="p">[</span><span class="o">++</span><span class="n">top</span><span class="p">]</span> <span class="o">=</span> <span class="n">x</span><span class="p">;</span>
+                        
+                        <span class="c1">//考试中写出栈</span>
+                        <span class="n">x</span> <span class="o">=</span> <span class="n">stack</span><span class="p">[</span><span class="n">top</span><span class="o">--</span><span class="p">];</span>
+                        </pre>
                     </div>
 
 
                     <div class="codehilite">
                         <pre><span></span><span class="cm">/*链栈*/</span>
-<span class="c1">//链栈默认情况下不存在栈满情况，栈空即为栈顶指针的 next 指针域为 NULL</span>
-<span class="c1">//链栈的入栈相当于单链表头插法，出栈相当于删除单链表元素 </span>
-<span class="k">typedef</span> <span class="k">struct</span> <span class="n">LNode</span> <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">data</span><span class="p">;</span> <span class="c1">// 数据域</span>
-    <span class="k">struct</span> <span class="n">LNode</span> <span class="o">*</span><span class="n">next</span><span class="p">;</span> <span class="c1">// 指针域</span>
-<span class="p">}</span><span class="n">LNode</span><span class="p">;</span> <span class="c1">// 类型定义</span>
-</pre>
+                            <span class="c1">//链栈默认情况下不存在栈满情况，栈空即为栈顶指针的 next 指针域为 NULL</span>
+                            <span class="c1">//链栈的入栈相当于单链表头插法，出栈相当于删除单链表元素 </span>
+                            <span class="k">typedef</span> <span class="k">struct</span> <span class="n">LNode</span> <span class="p">{</span>
+                                <span class="kt">int</span> <span class="n">data</span><span class="p">;</span> <span class="c1">// 数据域</span>
+                                <span class="k">struct</span> <span class="n">LNode</span> <span class="o">*</span><span class="n">next</span><span class="p">;</span> <span class="c1">// 指针域</span>
+                            <span class="p">}</span><span class="n">LNode</span><span class="p">;</span> <span class="c1">// 类型定义</span>
+                            </pre>
                     </div>
 
 
@@ -236,29 +236,29 @@
                     <p>顺序队：</p>
                     <div class="codehilite">
                         <pre><span></span><span class="cm">/*顺序队列*/</span>
-<span class="k">typedef</span> <span class="k">struct</span> <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">data</span><span class="p">[</span><span class="n">maxSize</span><span class="p">];</span>
-    <span class="kt">int</span> <span class="n">front</span><span class="p">;</span>
-    <span class="kt">int</span> <span class="n">rear</span><span class="p">;</span>
-<span class="p">}</span><span class="n">SqQueue</span><span class="p">;</span>
-</pre>
+                            <span class="k">typedef</span> <span class="k">struct</span> <span class="p">{</span>
+                                <span class="kt">int</span> <span class="n">data</span><span class="p">[</span><span class="n">maxSize</span><span class="p">];</span>
+                                <span class="kt">int</span> <span class="n">front</span><span class="p">;</span>
+                                <span class="kt">int</span> <span class="n">rear</span><span class="p">;</span>
+                            <span class="p">}</span><span class="n">SqQueue</span><span class="p">;</span>
+                        </pre>
                     </div>
 
 
                     <p>链队：</p>
                     <div class="codehilite">
                         <pre><span></span><span class="cm">/*队结点*/</span>
-<span class="k">typedef</span> <span class="k">struct</span> <span class="n">QNode</span> <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">data</span><span class="p">;</span> 
-    <span class="k">struct</span> <span class="n">QNode</span> <span class="o">*</span><span class="n">next</span><span class="p">;</span>
-<span class="p">}</span><span class="n">QNode</span><span class="p">;</span>
-
-<span class="cm">/*链队*/</span>
-<span class="k">typedef</span> <span class="k">struct</span> <span class="p">{</span>
-    <span class="n">QNode</span> <span class="o">*</span><span class="n">front</span><span class="p">;</span>
-    <span class="n">QNode</span> <span class="o">*</span><span class="n">rear</span><span class="p">;</span>
-<span class="p">}</span><span class="n">LiQueue</span><span class="p">;</span>
-</pre>
+                            <span class="k">typedef</span> <span class="k">struct</span> <span class="n">QNode</span> <span class="p">{</span>
+                                <span class="kt">int</span> <span class="n">data</span><span class="p">;</span> 
+                                <span class="k">struct</span> <span class="n">QNode</span> <span class="o">*</span><span class="n">next</span><span class="p">;</span>
+                            <span class="p">}</span><span class="n">QNode</span><span class="p">;</span>
+                            
+                            <span class="cm">/*链队*/</span>
+                            <span class="k">typedef</span> <span class="k">struct</span> <span class="p">{</span>
+                                <span class="n">QNode</span> <span class="o">*</span><span class="n">front</span><span class="p">;</span>
+                                <span class="n">QNode</span> <span class="o">*</span><span class="n">rear</span><span class="p">;</span>
+                            <span class="p">}</span><span class="n">LiQueue</span><span class="p">;</span>
+                            </pre>
                     </div>
                 </div>
                 <div class="prev-next">
@@ -268,7 +268,7 @@
                     </div>
                 </div>
             </div>
-            <!--<!--评论-->
+            <!--评论-->
             <div class="comment-container" style="margin-top: 20px; margin-bottom: 10px">
                 <div class="sort-box">
                     <span class="at-sort-s fl"><a style="box-sizing: content-box;"
