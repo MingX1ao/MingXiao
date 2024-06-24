@@ -269,7 +269,7 @@
                 </div>
             </div>
             <!--评论-->
-            <div class="comment-container" style="margin-top: 20px; margin-bottom: 10px">
+            <!--<div class="comment-container" style="margin-top: 20px; margin-bottom: 10px">
                 <div class="sort-box">
                     <span class="at-sort-s fl"><a style="box-sizing: content-box;"
                             class="at-sort-comment-a c-666">评论</a></span>
@@ -635,7 +635,60 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>-->
+                                                                            <h2 id="__comments">Comments</h2>
+                                                                                  <!-- Insert generated snippet here -->
+                                                                                  <script src="https://giscus.app/client.js"
+                                                                                  data-repo="sqc-cyh/MyWeb-discussion"
+                                                                                  data-repo-id="R_kgDOLX74Ng"
+                                                                                  data-category="General"
+                                                                                  data-category-id="DIC_kwDOLX74Ns4Cdg_o"
+                                                                                  data-mapping="pathname"
+                                                                                  data-strict="0"
+                                                                                  data-reactions-enabled="1"
+                                                                                  data-emit-metadata="0"
+                                                                                  data-input-position="bottom"
+                                                                                  data-theme="light"
+                                                                                  data-lang="zh-CN"
+                                                                                  crossorigin="anonymous"
+                                                                                  async>
+                                                                                </script>
+                                                                                  <!-- Synchronize Giscus theme with palette -->
+                                                                                  <script>
+                                                                                    var giscus = document.querySelector("script[src*=giscus]")
+                                                                                
+                                                                                    // Set palette on initial load
+                                                                                    var palette = __md_get("__palette")
+                                                                                    if (palette && typeof palette.color === "object") {
+                                                                                      var theme = palette.color.scheme === "slate"
+                                                                                        ? "transparent_dark"
+                                                                                        : "light"
+                                                                                
+                                                                                      // Instruct Giscus to set theme
+                                                                                      giscus.setAttribute("data-theme", theme) 
+                                                                                    }
+                                                                                
+                                                                                    // Register event handlers after documented loaded
+                                                                                    document.addEventListener("DOMContentLoaded", function() {
+                                                                                      var ref = document.querySelector("[data-md-component=palette]")
+                                                                                      ref.addEventListener("change", function() {
+                                                                                        var palette = __md_get("__palette")
+                                                                                        if (palette && typeof palette.color === "object") {
+                                                                                          var theme = palette.color.scheme === "slate"
+                                                                                            ? "transparent_dark"
+                                                                                            : "light"
+                                                                                
+                                                                                          // Instruct Giscus to change theme
+                                                                                          var frame = document.querySelector(".giscus-frame")
+                                                                                          frame.contentWindow.postMessage(
+                                                                                            { giscus: { setConfig: { theme } } },
+                                                                                            "https://giscus.app"
+                                                                                          )
+                                                                                        }
+                                                                                      })
+                                                                                    })
+                                                                                  </script>
+
         </div>
     </section>
     <!--尾部-->
