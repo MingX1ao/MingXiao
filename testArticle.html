@@ -278,6 +278,22 @@
                 <div class="text-area-holder">
                     <div id="vditor" class="vditor" style="height: 300px; width: auto;">
                         <div class="vditor-toolbar">
+                            <style>
+                                .container {
+                                    display: flex;
+                                    gap: 10px; /* Optional: adds some space between the elements */
+                                }
+                                .vditor-tooltipped {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    width: 32px;
+                                    height: 32px;
+                                }
+                                .vditor-panel {
+                                    display: none;
+                                }
+                            </style>
                             <div>
                                 <div class="vditor-tooltipped vditor-tooltipped__ne" aria-label="表情 <ctrl-e>"><svg
                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32px"
@@ -619,7 +635,7 @@
                         </div>
                     </div>
                 </div>
-            </div>-->
+            </div>
         </div>
     </section>
     <!--尾部-->
