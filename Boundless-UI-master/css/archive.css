@@ -29,6 +29,16 @@
     line-height: 40px;
     margin: 5px 5% 0 5%;
     float: left;
+    font-size: 18px;
+    color: #444555;
+}
+
+.achieve-box .title {
+    width: 90%;
+    min-height: 30px;
+    line-height: 40px;
+    margin: 5px 5% 0 5%;
+    float: left;
     font-size: 25px;
     color: #444555;
 }
