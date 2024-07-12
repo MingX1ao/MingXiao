@@ -136,7 +136,7 @@
                                 <li><a href="#4.1.1.2">4.1.1.2 单样本总体方差未知，用t分布</a></li>
                             </ul>    
                         </li>
-                        <li><a href="#4.1.1">4.1.2 双样本</a>
+                        <li><a href="#4.1.2">4.1.2 双样本</a>
                             <ul>
                                 <li><a href="#4.1.2.1">4.1.2.1 双样本是配对的（非独立样本）</a></li>
                                 <li><a href="#4.1.2.2">4.1.2.2 两个独立样本，总体方差各自已知</a></li>
@@ -178,7 +178,7 @@
                         <h4><a name="4111-单样本总体方差已知用z分布" class="md-header-anchor" id="4.1.1.1"></a><span>4.1.1.1 单样本总体方差已知，用Z分布</span></h4>
                         <p><span>对正态总体或近似正态总体，有</span>
                         $$\frac{\overline{x}-\mu}{\sigma / \sqrt{n}}\sim N(0,1)$$
-                        <span>若要求置信度为</span>1-\alpha<span>，则</span><br>
+                        <span>若要求置信度为</span>\(1-\alpha\)<span>，则</span><br>
                         $$\therefore P(-u_{\frac{\alpha}{2}}<\frac{\overline{x}-\mu}{\sigma / \sqrt{n}}\leq u_{\frac{\alpha}{2}})=1-\alpha$$
                         $$\Rightarrow \mathsf{CI}_{1-\alpha}=(\overline{x}-u_{\frac{\alpha}{2}}\frac{\sigma}{\sqrt{n}},\overline{x}+u_{\frac{\alpha}{2}}\frac{\sigma}{\sqrt{n}})$$</p>
                         <h4><a name="4112-单样本总体方差未知用t分布" class="md-header-anchor" id="4.1.1.2"></a><span>4.1.1.2 单样本总体方差未知，用t分布</span></h4>
@@ -194,13 +194,13 @@
                         <span>同一批人的两次成绩差的均值、双胞胎之间的身高差均值等，可以找到配对的双方的量</span><br>
                         <span>等价于单样本的分布，参见上方4.1.1</span></p>
                         <h4><a name="4122-两个独立样本总体方差各自已知" class="md-header-anchor" id="4.1.2.2"></a></a><span>4.1.2.2 两个独立样本，总体方差各自已知</span></h4>
-                        <p><span>已知</span>\overline{x_1}-\overline{x_2}<span>的置信区间</span></p>
+                        <p><span>已知</span>\(\overline{x_1}-\overline{x_2}\)<span>的置信区间</span></p>
                         <p>$$\therefore \overline{x_1}-\overline{x_2} \sim N(\mu_1-\mu_2,\frac{\sigma^2_1}{n_1}+\frac{\sigma^2_2}{n_2})$$</p>
                         <p><span>记</span>\(\frac{\sigma^2_1}{n_1}+\frac{\sigma^2_2}{n_2}=\sigma^2=sem^2\)<span>，称其为</span>\(\overline{x_1}-\overline{x_2}\)<span>的标准方差，也称标准误差的平方</span><br>
                         $$\therefore \frac{(\overline{x_1}-\overline{x_2})-(\mu_1-\mu_2)}{\sigma} \sim N(0,1)$$
                         $$\Rightarrow \mathsf{CI_{1-\alpha}}=(\overline{x_1}-\overline{x_2})\pm u_{\frac{\alpha}{2}}\sqrt{\frac{\sigma^2_1}{n_1}+\frac{\sigma^2_2}{n_2}}$$</p>
                         <h4><a name="4123-两个独立样本总体方差未知但相等" class="md-header-anchor" id="4.1.2.3"></a><span>4.1.2.3 两个独立样本，总体方差未知但相等</span></h4>
-                        <p><span>已知</span>\sigma^2_1=\sigma^2_2=\sigma^2<span>，但是多少不知道</span><br>
+                        <p><span>已知</span>\(\sigma^2_1=\sigma^2_2=\sigma^2\)<span>，但是多少不知道</span><br>
                         <span>使用t分布</span><br>
                         $$\therefore \overline{x_1}-\overline{x_2} \sim N(\mu_1-\mu_2, \frac{\sigma^2}{n_1}+\frac{\sigma^2}{n_2})$$
                         $$\Rightarrow \frac{(\overline{x_1}-\overline{x_2})-(\mu_1-\mu_2)}{\sigma \sqrt{\frac{1}{n_1}+\frac{1}{n_2}}} \sim N(0,1)$$
@@ -213,7 +213,7 @@
                         <p><span>使用</span><strong><span>Welch&#39;s t分布</span></strong><br>
                         <span>推导过于复杂，直接给出结论</span><br>
                         $$\mathsf{CI}_{1-\alpha}=(\overline{x_1}-\overline{x_2})\pm t_{\frac{\alpha}{2}}(\nu)\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}$$
-                        <span>其中</span>\nu<span>为t分布的自由度，通常不是整数，用最接近的整数计算，有</span><br>
+                        <span>其中</span>\(\nu\)<span>为t分布的自由度，通常不是整数，用最接近的整数计算，有</span><br>
                         $$\nu=\frac{(\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2})^2}{\frac{1}{(n_1-1)}(\frac{s_1^2}{n_1})^2+\frac{1}{(n_2-1)}(\frac{s_2^2}{n_2})^2}$$</p>
                     </div>    
                 </div>
